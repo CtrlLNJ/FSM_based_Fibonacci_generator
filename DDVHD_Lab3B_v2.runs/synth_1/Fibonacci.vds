@@ -1,0 +1,344 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Oct 19 18:18:09 2018
+# Process ID: 10536
+# Current directory: F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.runs/synth_1
+# Command line: vivado.exe -log Fibonacci.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fibonacci.tcl
+# Log file: F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.runs/synth_1/Fibonacci.vds
+# Journal file: F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Fibonacci.tcl -notrace
+Command: synth_design -top Fibonacci -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8672 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 391.105 ; gain = 100.563
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Fibonacci' [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Fibonacci.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Debouncer.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (1#1) [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Debouncer.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'Datapath' [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Datapath.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'RAM' [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/RAM.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (2#1) [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/RAM.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (3#1) [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Datapath.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'Control' [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Control.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'two_four_bit_counters' [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/new/two_four_bit_counters.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'two_four_bit_counters' (4#1) [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/new/two_four_bit_counters.vhd:13]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Control.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Control' (5#1) [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Control.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Fibonacci' (6#1) [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Fibonacci.vhd:18]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 443.074 ; gain = 152.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 443.074 ; gain = 152.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 443.074 ; gain = 152.531
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Control'
+INFO: [Synth 8-5544] ROM "r2_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r1_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Control.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Control.vhd:44]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 store_0 |                              000 |                              000
+                 store_1 |                              001 |                              001
+                 load_r1 |                              010 |                              010
+                 load_r2 |                              011 |                              011
+                 store_n |                              100 |                              100
+                 wait_st |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Control'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Control.vhd:44]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 443.074 ; gain = 152.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module Datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module two_four_bit_counters 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module Control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 610.816 ; gain = 320.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+----------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------------------+-----------+----------------------+-----------------+
+|Fibonacci   | Fib_Datapath/Memory/ram_inst_reg | Implied   | 32 x 16              | RAM32X1S x 16   | 
++------------+----------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 610.816 ; gain = 320.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+----------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------------------+-----------+----------------------+-----------------+
+|Fibonacci   | Fib_Datapath/Memory/ram_inst_reg | Implied   | 32 x 16              | RAM32X1S x 16   | 
++------------+----------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 610.820 ; gain = 320.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 610.820 ; gain = 320.277
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 610.820 ; gain = 320.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 610.820 ; gain = 320.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 610.820 ; gain = 320.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 610.820 ; gain = 320.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 610.820 ; gain = 320.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     4|
+|3     |LUT1     |     1|
+|4     |LUT2     |    18|
+|5     |LUT3     |    21|
+|6     |LUT4     |     6|
+|7     |LUT5     |     7|
+|8     |LUT6     |     6|
+|9     |RAM32X1S |    16|
+|10    |FDRE     |    62|
+|11    |LD       |     3|
+|12    |IBUF     |     3|
+|13    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------+----------------------+------+
+|      |Instance             |Module                |Cells |
++------+---------------------+----------------------+------+
+|1     |top                  |                      |   164|
+|2     |  Fib_Control        |Control               |    48|
+|3     |    five_bit_Counter |two_four_bit_counters |    22|
+|4     |  Fib_Datapath       |Datapath              |    84|
+|5     |    Memory           |RAM                   |    16|
+|6     |  Next_Debouncer     |Debouncer             |     4|
+|7     |  Rst_Debouncer      |Debouncer_0           |     8|
++------+---------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 610.820 ; gain = 320.277
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 610.820 ; gain = 320.277
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 610.820 ; gain = 320.277
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  LD => LDCE: 3 instances
+  RAM32X1S => RAM32X1S (RAMS32): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 714.117 ; gain = 436.266
+INFO: [Common 17-1381] The checkpoint 'F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.runs/synth_1/Fibonacci.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Fibonacci_utilization_synth.rpt -pb Fibonacci_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 714.117 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 19 18:18:45 2018...

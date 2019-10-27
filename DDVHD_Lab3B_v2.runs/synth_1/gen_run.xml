@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1539969485">
+  <File Type="PA-TCL" Name="Fibonacci.tcl"/>
+  <File Type="REPORTS-TCL" Name="Fibonacci_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Fibonacci.vds"/>
+  <File Type="RDS-UTIL" Name="Fibonacci_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Fibonacci_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Fibonacci.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/two_four_bit_counters.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DDVHD_Lab3B/DDVHD_Lab3B.srcs/sources_1/imports/new/two_four_bit_counters.vhd"/>
+        <Attr Name="ImportTime" Val="1539682246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3b-VHDL/Control.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab3b-VHDL/Control.vhd"/>
+        <Attr Name="ImportTime" Val="1478786986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3b-VHDL/RAM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab3b-VHDL/RAM.vhd"/>
+        <Attr Name="ImportTime" Val="1478859096"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3b-VHDL/Datapath.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab3b-VHDL/Datapath.vhd"/>
+        <Attr Name="ImportTime" Val="1478858936"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3b-VHDL/Debouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab3b-VHDL/Debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1265540364"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3b-VHDL/Fibonacci.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab3b-VHDL/Fibonacci.vhd"/>
+        <Attr Name="ImportTime" Val="1478859028"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Fibonacci"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
