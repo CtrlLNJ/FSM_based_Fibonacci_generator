@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../DDVHD_Lab3B_v2.srcs/sources_1/imports/new/two_four_bit_counters.vhd" \
+"../../../../DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Control.vhd" \
+"../../../../DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/RAM.vhd" \
+"../../../../DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Datapath.vhd" \
+"../../../../DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Debouncer.vhd" \
+"../../../../DDVHD_Lab3B_v2.srcs/sources_1/imports/Lab3b-VHDL/Fibonacci.vhd" \
+"../../../../DDVHD_Lab3B_v2.srcs/sim_1/new/Fibonacci_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Oct 19 17:44:02 2018
+# Process ID: 5588
+# Current directory: F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.sim/sim_1/behav/xsim/xsim.dir/counter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source F:/VHDL/VivadoProjects/DDVHD_Lab3B_v2/DDVHD_Lab3B_v2.sim/sim_1/behav/xsim/xsim.dir/counter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
